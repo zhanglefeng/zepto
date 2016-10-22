@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/zhifu.css">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title"><i class="fa fa-newspaper-o"></i>知乎日报</div>
+      </div>
+      <div class="app-content">
+        <!-- 新添加的原模板没有的 -->
+         <!--  <div class="app-section-stories">
+            <ul class="app-list"> -->
+                <script type="text/x-template" id="js-story-template">
+                    <li class="story">
+                      <div class="media">
+                        <img class="media-figure Image" src="${image}" alt="Kitten">
+                          <div class="media-body">
+                              <h3 class="media-title">${title}</h3>
+                              <p></p>
+                             <!--  发布时间:{publishDate} -->
+                          </div>
+                      </div>
+                  </li>
+                </script>
+               <!--  <li>Item 2</li>
+                <li>Item 3</li> -->
+             
+           <div class="app-section-stories">
+              <ul class="app-list" id="js-story-container">
+                   
+              </ul>
+            </div>
+
+         <!--   <div class="app-section-top-stories">
+              <ul class="app-list" >
+                  <li>1</li>
+                  <li>2</li>
+                   <li>3</li>
+              </ul>
+          </div> -->
+<!-- 
+        <div class="app-section">
+          <div class="app-button" data-target="page2"><i class="fa fa-plus"></i>Go to Page 2</div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="app-page" data-page="page2">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page 2</div>
+      </div>
+      <div class="app-content">
+        Page 2 is lonely
+      </div>
+    </div>
+
+    <script src="js/zepto.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/zhufu.js"></script>
+  </body>
+</html>
